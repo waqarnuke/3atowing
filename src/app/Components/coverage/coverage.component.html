@@ -1,0 +1,61 @@
+<section id="coverage" class="coverage-section text-white">
+  <div class="container">
+
+    <div class="route-result-wrapper" *ngIf="distanceMiles">
+      <div class="route-result-box">
+        <div class="result-label">Route Distance</div>
+        <div class="result-value">{{ distanceMiles }} miles</div>
+      </div>
+    </div>
+
+    <div class="row align-items-center g-5">
+
+      <div class="col-lg-6">
+        <div class="map-card">
+          <div id="coverageMap" class="real-map"></div>
+        </div>
+      </div>
+
+      <div class="col-lg-6">
+        <div class="coverage-label">COVERAGE</div>
+
+        <h2 class="coverage-title fw-bold mb-4">
+          Serving <span class="text-danger">Houston & Surrounding Areas, TX</span>
+        </h2>
+
+      <div class="coverage-label">OUR SERVICE AREA</div>
+
+<p class="coverage-text mb-4">
+  We provide 24/7 towing and roadside assistance services across North Houston and nearby areas.
+</p>
+
+<div class="row">
+  <div class="col-6">
+    <ul class="coverage-list list-unstyled">
+          <li><a href="/westchase" routerLink="/westchase">westchase, TX</a></li>
+          <li><a href="/montrose" routerLink="/montrose">Montrose, TX</a></li>
+          <li><a href="/riveroaks" routerLink="/riveroaks">River Oaks, TX</a></li>
+          <li><a href="/sugarland-missouricity" routerLink="/sugarland-missouricity">SugarLand/Missouri City, TX</a></li>
+          <li><a href="/memorial" routerLink="/memorial">Memorial, TX</a></li>
+    </ul>
+  </div>
+
+  <!-- <div class="col-6">
+    <ul class="coverage-list list-unstyled">
+          <li><a href="/huffman" routerLink="/huffman">Huffman, TX</a></li>
+          <li><a href="/splendora" routerLink="/splendora">Splendora, TX</a></li>
+          <li><a href="/cleveland" routerLink="/cleveland">Cleveland, TX</a></li>
+          <li><a href="/dayton" routerLink="/dayton">Dayton, TX</a></li>
+          <li><a href="/thewoodland" routerLink="/thewoodland">The Woodlands, TX</a></li>
+    </ul>
+  </div> -->
+</div>
+
+        <div class="location-box mt-4">
+          <strong>Location:</strong> Humble, Tx 77338
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>

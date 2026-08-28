@@ -1,0 +1,31 @@
+<section id="quote" class="quote-section text-white text-center">
+  <div class="container">
+    <h2 class="fw-bold mb-5">
+      Where Do You <span class="text-danger">Need Us?</span>
+    </h2>
+
+    <div class="quote-box mx-auto">
+      <div class="d-flex align-items-center gap-3 flex-wrap justify-content-start">
+
+        <div class="input-pill d-flex align-items-center">
+          <span class="icon">📍</span>
+          <input type="text" placeholder="Pickup address" [(ngModel)]="pickup">
+        </div>
+
+        <div class="swap-btn">
+          ⇄
+        </div>
+
+        <div class="input-pill d-flex align-items-center">
+          <span class="icon">➤</span>
+          <input type="text" placeholder="Drop-off address" [(ngModel)]="dropoff">
+        </div>
+
+        <button class="btn route-btn" (click)="getRoute()">
+          Get Route
+        </button>
+
+      </div>
+    </div>
+  </div>
+</section>

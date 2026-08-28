@@ -1,0 +1,138 @@
+.pricing-section {
+  padding: 110px 0;
+  background: #050507;
+}
+
+.pricing-label {
+  color: #ff4d4d;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 12px;
+}
+
+.pricing-title {
+  font-size: 58px;
+  line-height: 1.1;
+}
+
+.pricing-subtitle {
+  max-width: 760px;
+  color: rgba(255, 255, 255, 0.72);
+  font-size: 20px;
+}
+
+.price-card {
+  height: 100%;
+  padding: 34px 22px;
+  border-radius: 18px;
+  background: rgba(120, 0, 20, 0.08);
+  border: 1px solid rgba(255, 0, 50, 0.15);
+  box-shadow: 0 0 28px rgba(255, 0, 50, 0.05);
+}
+
+.price-icon {
+  width: 52px;
+  height: 52px;
+  margin: 0 auto 20px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 0, 50, 0.10);
+  font-size: 22px;
+}
+
+.price-value {
+  font-size: 48px;
+  font-weight: 800;
+  color: #ff4d4d;
+  margin-bottom: 8px;
+}
+
+.price-heading {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.price-text {
+  color: rgba(255, 255, 255, 0.68);
+  font-size: 16px;
+}
+
+.comparison-card {
+  max-width: 980px;
+  padding: 18px;
+  border-radius: 18px;
+  background: rgba(120, 0, 20, 0.08);
+  border: 1px solid rgba(255, 0, 50, 0.15);
+  box-shadow: 0 0 28px rgba(255, 0, 50, 0.05);
+}
+
+.comparison-table {
+  --bs-table-bg: transparent;
+  --bs-table-color: #ffffff;
+  --bs-table-border-color: rgba(255,255,255,0.08);
+}
+
+.comparison-table thead th {
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+  font-size: 14px;
+  letter-spacing: 0.5px;
+}
+
+.comparison-table td,
+.comparison-table th {
+  padding: 18px 16px;
+}
+
+.comparison-table tbody tr {
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+}
+
+.comparison-table tbody tr:last-child {
+  border-bottom: none;
+}
+
+@media (max-width: 992px) {
+  .pricing-title {
+    font-size: 44px;
+  }
+
+  .pricing-subtitle {
+    font-size: 18px;
+  }
+
+  .price-value {
+    font-size: 38px;
+  }
+
+  .price-heading {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .pricing-title {
+    font-size: 34px;
+  }
+
+  .pricing-subtitle {
+    font-size: 16px;
+  }
+
+  .price-value {
+    font-size: 32px;
+  }
+
+  .price-heading {
+    font-size: 18px;
+  }
+
+  .comparison-table td,
+  .comparison-table th {
+    padding: 14px 10px;
+    font-size: 14px;
+  }
+}
