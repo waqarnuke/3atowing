@@ -1,61 +1,229 @@
-<section id="coverage" class="coverage-section text-white">
+<section id="coverage" class="coverage-section">
   <div class="container">
 
-    <div class="route-result-wrapper" *ngIf="distanceMiles">
-      <div class="route-result-box">
-        <div class="result-label">Route Distance</div>
-        <div class="result-value">{{ distanceMiles }} miles</div>
-      </div>
-    </div>
+    <div class="coverage-wrapper">
 
-    <div class="row align-items-center g-5">
+      <!-- LEFT CONTENT -->
+      <div class="coverage-content">
 
-      <div class="col-lg-6">
-        <div class="map-card">
-          <div id="coverageMap" class="real-map"></div>
+        <div class="coverage-label">
+          OUR SERVICE AREA
         </div>
-      </div>
 
-      <div class="col-lg-6">
-        <div class="coverage-label">COVERAGE</div>
-
-        <h2 class="coverage-title fw-bold mb-4">
-          Serving <span class="text-danger">Houston & Surrounding Areas, TX</span>
+        <h2 class="coverage-title">
+          Towing Across
+          <span>Houston & Surrounding Areas</span>
         </h2>
 
-      <div class="coverage-label">OUR SERVICE AREA</div>
+        <p class="coverage-text">
+          From roadside emergencies to scheduled towing, we're available
+          throughout Houston and nearby communities with dependable,
+          responsive service.
+        </p>
 
-<p class="coverage-text mb-4">
-  We provide 24/7 towing and roadside assistance services across North Houston and nearby areas.
-</p>
 
-<div class="row">
-  <div class="col-6">
-    <ul class="coverage-list list-unstyled">
-          <li><a href="/westchase" routerLink="/westchase">westchase, TX</a></li>
-          <li><a href="/montrose" routerLink="/montrose">Montrose, TX</a></li>
-          <li><a href="/riveroaks" routerLink="/riveroaks">River Oaks, TX</a></li>
-          <li><a href="/sugarland-missouricity" routerLink="/sugarland-missouricity">SugarLand/Missouri City, TX</a></li>
-          <li><a href="/memorial" routerLink="/memorial">Memorial, TX</a></li>
-    </ul>
-  </div>
+        <!-- SMALL FEATURES -->
+        <div class="coverage-features">
 
-  <!-- <div class="col-6">
-    <ul class="coverage-list list-unstyled">
-          <li><a href="/huffman" routerLink="/huffman">Huffman, TX</a></li>
-          <li><a href="/splendora" routerLink="/splendora">Splendora, TX</a></li>
-          <li><a href="/cleveland" routerLink="/cleveland">Cleveland, TX</a></li>
-          <li><a href="/dayton" routerLink="/dayton">Dayton, TX</a></li>
-          <li><a href="/thewoodland" routerLink="/thewoodland">The Woodlands, TX</a></li>
-    </ul>
-  </div> -->
-</div>
+          <div class="coverage-feature">
+            <div class="feature-icon">
+              <i class="bi bi-clock-fill"></i>
+            </div>
 
-        <div class="location-box mt-4">
-          <strong>Location:</strong> Humble, Tx 77338
+            <div>
+              <strong>24/7 Service</strong>
+              <span>Day or night</span>
+            </div>
+          </div>
+
+
+          <div class="coverage-feature">
+            <div class="feature-icon">
+              <i class="bi bi-lightning-charge-fill"></i>
+            </div>
+
+            <div>
+              <strong>Fast Response</strong>
+              <span>When you need us</span>
+            </div>
+          </div>
+
         </div>
+
+
+        <!-- BASE LOCATION -->
+        <div class="coverage-base">
+
+          <div class="base-icon">
+            <i class="bi bi-geo-alt-fill"></i>
+          </div>
+
+          <div>
+            <span>OUR BASE</span>
+            <strong>Humble, TX 77338</strong>
+          </div>
+
+        </div>
+
+
+        <a href="tel:+18329316227" class="coverage-call-btn">
+          <i class="bi bi-telephone-fill"></i>
+
+          <div>
+            <span>Need roadside help?</span>
+            <strong>Call (832) 931-6227</strong>
+          </div>
+        </a>
+
+      </div>
+
+
+      <!-- RIGHT SIDE -->
+      <div class="coverage-area-panel">
+
+        <div class="area-panel-header">
+
+          <div>
+            <span class="area-mini-label">COVERAGE NETWORK</span>
+            <h3>Areas We Serve</h3>
+          </div>
+
+          <div class="coverage-status">
+            <span></span>
+            Available 24/7
+          </div>
+
+        </div>
+
+
+        <!-- MAIN HUB -->
+        <div class="coverage-hub">
+
+          <div class="hub-icon">
+            <i class="bi bi-geo-alt-fill"></i>
+          </div>
+
+          <div class="hub-content">
+            <span>PRIMARY SERVICE HUB</span>
+            <h4>Houston, Texas</h4>
+            <p>
+              Serving Houston neighborhoods and surrounding communities.
+            </p>
+          </div>
+
+          <div class="hub-ring"></div>
+
+        </div>
+
+
+        <!-- AREA LINKS -->
+        <div class="coverage-areas">
+
+          <a
+            routerLink="/westchase"
+            class="coverage-area-card">
+
+            <div class="area-icon">
+              <i class="bi bi-geo"></i>
+            </div>
+
+            <div>
+              <strong>Westchase</strong>
+              <span>Houston, TX</span>
+            </div>
+
+            <i class="bi bi-arrow-up-right area-arrow"></i>
+
+          </a>
+
+
+          <a
+            routerLink="/montrose"
+            class="coverage-area-card">
+
+            <div class="area-icon">
+              <i class="bi bi-geo"></i>
+            </div>
+
+            <div>
+              <strong>Montrose</strong>
+              <span>Houston, TX</span>
+            </div>
+
+            <i class="bi bi-arrow-up-right area-arrow"></i>
+
+          </a>
+
+
+          <a
+            routerLink="/riveroaks"
+            class="coverage-area-card">
+
+            <div class="area-icon">
+              <i class="bi bi-geo"></i>
+            </div>
+
+            <div>
+              <strong>River Oaks</strong>
+              <span>Houston, TX</span>
+            </div>
+
+            <i class="bi bi-arrow-up-right area-arrow"></i>
+
+          </a>
+
+
+          <a
+            routerLink="/sugarland-missouricity"
+            class="coverage-area-card">
+
+            <div class="area-icon">
+              <i class="bi bi-geo"></i>
+            </div>
+
+            <div>
+              <strong>Sugar Land / Missouri City</strong>
+              <span>Texas</span>
+            </div>
+
+            <i class="bi bi-arrow-up-right area-arrow"></i>
+
+          </a>
+
+
+          <a
+            routerLink="/memorial"
+            class="coverage-area-card">
+
+            <div class="area-icon">
+              <i class="bi bi-geo"></i>
+            </div>
+
+            <div>
+              <strong>Memorial</strong>
+              <span>Houston, TX</span>
+            </div>
+
+            <i class="bi bi-arrow-up-right area-arrow"></i>
+
+          </a>
+
+        </div>
+
+
+        <div class="coverage-panel-footer">
+
+          <i class="bi bi-info-circle"></i>
+
+          <span>
+            Don't see your area? Call us to confirm availability.
+          </span>
+
+        </div>
+
       </div>
 
     </div>
+
   </div>
 </section>

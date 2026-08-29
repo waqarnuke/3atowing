@@ -1,77 +1,318 @@
 <section id="contact" class="footer-section text-white">
   <div class="container">
 
-    <div class="row gy-5">
+    <!-- ======================================
+         MAP + CONTACT TOP AREA
+    ======================================= -->
+    <div class="footer-location-panel">
 
-      <!-- logo + intro -->
-      <div class="col-lg-3 col-md-6">
-        <div class="footer-logo mb-3">3aTowing</div>
-        <p class="footer-text">
-          24/7 Towing & Roadside Assistance serving North Houston and surrounding communities.
+      <!-- MAP -->
+      <div class="footer-map-wrap">
+
+        <div class="footer-map-header">
+          <div>
+            <span class="footer-mini-label">OUR LOCATION</span>
+            <h3>Serving Houston & Nearby Areas</h3>
+          </div>
+
+          <div class="footer-open-badge">
+            <span></span>
+            Open 24/7
+          </div>
+        </div>
+
+        <div class="footer-map-card">
+          <div id="coverageMap" class="real-map"></div>
+        </div>
+
+      </div>
+
+
+      <!-- CONTACT PANEL -->
+      <div class="footer-emergency-card">
+
+        <span class="footer-mini-label">
+          NEED ROADSIDE HELP?
+        </span>
+
+        <h2>
+          Stuck on the road?
+          <span>We're ready to help.</span>
+        </h2>
+
+        <p>
+          Fast towing and roadside assistance available 24 hours a day
+          throughout Houston and surrounding communities.
         </p>
-      </div>
 
-      <!-- quick links -->
-      <div class="col-lg-3 col-md-6">
-        <h4 class="footer-heading">Quick Links</h4>
-        <ul class="footer-list list-unstyled">
-          <li><a href="#">Services</a></li>
 
-          <li><a href="#">Service Area</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-      </div>
+        <!-- LOCATION -->
+        <div class="footer-contact-item">
 
-      <!-- service areas (FIXED LIST) -->
-      <div class="col-lg-3 col-md-6">
-        <h4 class="footer-heading">Service Areas</h4>
-        <ul class="footer-list list-unstyled">
-          <li><a routerLink="/westchase">Westchase, TX</a></li>
-          <li><a routerLink="/montrose">Montrose, TX</a></li>
-          <li><a routerLink="/riveroaks">Riveroaks, TX</a></li>
-          <li><a routerLink="/sugarland-missouricity">SugarLand/Missouri City, TX</a></li>
-          <li><a routerLink="/memorial">Memorial, TX</a></li>
-          <!-- <li><a routerLink="/huffman">Huffman, TX</a></li>
-          <li><a routerLink="/splendora">Splendora, TX</a></li>
-          <li><a routerLink="/cleveland">Cleveland, TX</a></li>
-          <li><a routerLink="/dayton">Dayton, TX</a></li>
-          <li><a routerLink="/thewoodland">The Woodlands, TX</a></li> -->
-        </ul>
-      </div>
+          <div class="footer-contact-icon">
+            <i class="bi bi-geo-alt-fill"></i>
+          </div>
 
-      <!-- contact -->
-      <div class="col-lg-3 col-md-6">
-        <h4 class="footer-heading">Contact</h4>
-        <ul class="footer-list list-unstyled">
-          <li><a href="tel:+18329316227">(832) 931-6227</a></li>
+          <div>
+            <small>LOCATION</small>
+            <strong>Humble, TX 77338</strong>
+          </div>
 
-          <li>
-            <a href="sms:+18329316227">
-              iMessage
-            </a>
-          </li>
+        </div>
 
-          <li>
-            <a href="https://wa.me/18329316227?text=Hi%20I%20need%20towing%20service" target="_blank">
-              WhatsApp
-            </a>
-          </li>
 
-          <!-- LOCATION CLICK = CALL -->
-          <li>
+        <!-- PHONE -->
+        <div class="footer-contact-item">
+
+          <div class="footer-contact-icon">
+            <i class="bi bi-telephone-fill"></i>
+          </div>
+
+          <div>
+            <small>CALL ANYTIME</small>
+
             <a href="tel:+18329316227">
-              Humble, Tx 77338
+              (832) 931-6227
             </a>
-          </li>
+          </div>
 
-          <li class="open-text">Open 24/7</li>
-        </ul>
+        </div>
+
+
+        <!-- BUTTONS -->
+        <div class="footer-action-buttons">
+
+          <a
+            href="tel:+18329316227"
+            class="footer-main-call">
+
+            <i class="bi bi-telephone-fill"></i>
+            Call Now
+
+          </a>
+
+
+          <a
+            href="sms:+18329316227"
+            class="footer-small-action"
+            aria-label="Send message">
+
+            <i class="bi bi-chat-dots-fill"></i>
+
+          </a>
+
+
+          <a
+            href="https://wa.me/18329316227?text=Hi%20I%20need%20towing%20service"
+            target="_blank"
+            class="footer-small-action"
+            aria-label="WhatsApp">
+
+            <i class="bi bi-whatsapp"></i>
+
+          </a>
+
+        </div>
+
+
+        <!-- Optional distance result -->
+        <div
+          class="footer-distance"
+          *ngIf="distanceMiles">
+
+          <div>
+            <span>ROUTE DISTANCE</span>
+            <strong>{{ distanceMiles }} miles</strong>
+          </div>
+
+          <i class="bi bi-signpost-2-fill"></i>
+
+        </div>
+
       </div>
 
     </div>
 
-    <div class="footer-bottom text-center mt-5">
-      © {{currentYear}}  3aTowing. All rights reserved.Developed by <a class="link-secondary text-white-50 link-underline-opacity-0 " href="https://softcygnus.com" target="_blank">Soft Cygnus</a>.
+
+
+    <!-- ======================================
+         FOOTER LINKS
+    ======================================= -->
+    <div class="footer-links-area">
+
+      <div class="row gy-5">
+
+        <!-- LOGO -->
+        <div class="col-lg-4 col-md-6">
+
+          <div class="footer-logo">
+            3aTowing
+          </div>
+
+          <p class="footer-text">
+            24/7 towing and roadside assistance serving Houston
+            and surrounding communities.
+          </p>
+
+          <div class="footer-availability">
+            <span></span>
+            Available 24 Hours • 7 Days
+          </div>
+
+        </div>
+
+
+        <!-- QUICK LINKS -->
+        <div class="col-lg-2 col-md-6">
+
+          <h4 class="footer-heading">
+            Quick Links
+          </h4>
+
+          <ul class="footer-list list-unstyled">
+
+            <li>
+              <a href="#services">
+                Services
+              </a>
+            </li>
+
+            <li>
+              <a href="#coverage">
+                Service Area
+              </a>
+            </li>
+
+            <li>
+              <a href="#contact">
+                Contact
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
+
+
+        <!-- SERVICE AREAS -->
+        <div class="col-lg-3 col-md-6">
+
+          <h4 class="footer-heading">
+            Service Areas
+          </h4>
+
+          <ul class="footer-list list-unstyled">
+
+            <li>
+              <a routerLink="/westchase">
+                Westchase, TX
+              </a>
+            </li>
+
+            <li>
+              <a routerLink="/montrose">
+                Montrose, TX
+              </a>
+            </li>
+
+            <li>
+              <a routerLink="/riveroaks">
+                River Oaks, TX
+              </a>
+            </li>
+
+            <li>
+              <a routerLink="/sugarland-missouricity">
+                Sugar Land / Missouri City, TX
+              </a>
+            </li>
+
+            <li>
+              <a routerLink="/memorial">
+                Memorial, TX
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
+
+
+        <!-- CONTACT -->
+        <div class="col-lg-3 col-md-6">
+
+          <h4 class="footer-heading">
+            Get In Touch
+          </h4>
+
+          <ul class="footer-list footer-contact-list list-unstyled">
+
+            <li>
+              <i class="bi bi-telephone-fill"></i>
+
+              <a href="tel:+18329316227">
+                (832) 931-6227
+              </a>
+            </li>
+
+            <li>
+              <i class="bi bi-chat-dots-fill"></i>
+
+              <a href="sms:+18329316227">
+                iMessage
+              </a>
+            </li>
+
+            <li>
+              <i class="bi bi-whatsapp"></i>
+
+              <a
+                href="https://wa.me/18329316227?text=Hi%20I%20need%20towing%20service"
+                target="_blank">
+
+                WhatsApp
+
+              </a>
+            </li>
+
+            <li>
+              <i class="bi bi-geo-alt-fill"></i>
+
+              <span>
+                Humble, TX 77338
+              </span>
+            </li>
+
+          </ul>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+
+    <!-- ======================================
+         COPYRIGHT
+    ======================================= -->
+    <div class="footer-bottom">
+
+      <div>
+        © {{ currentYear }} 3aTowing. All rights reserved.
+      </div>
+
+      <div>
+        Developed by
+        <a
+          href="https://softcygnus.com"
+          target="_blank">
+
+          Soft Cygnus
+
+        </a>
+      </div>
+
     </div>
 
   </div>
