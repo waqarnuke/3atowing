@@ -42,7 +42,7 @@ export class CoverageComponent implements AfterViewInit {
     }).addTo(this.map);
 
     const marker = L.marker([porterLat, porterLng]).addTo(this.map);
-    marker.bindPopup('<b>Kaswa Towing</b><br>Humble, Tx 77338').openPopup();
+    marker.bindPopup('<b>Kaswa Towing</b><br>Houston TX 77042').openPopup();
 
     L.circle([porterLat, porterLng], {
       radius: 25000,
